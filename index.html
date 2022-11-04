@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iconic</title>
+    <link rel="icon" href="assests/images/logo.png">
+    <link rel="stylesheet" href="assests/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js" integrity="sha512-tHvUcUQYi35zApvAa5TNR3fNhBQkVtkmWKfacnpxmix4/VTGz1lGjIVyLMp7gLgAvg+aKJjnVKokXJNS5GZ+/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="logo"><img src="assests/images/logo.png"></div>
+        <div class="menu"><img src="assests/images/icons8-menu-rounded-100.png"></div>
+    </div>
+    <p id="head">Trade in your smartphone for credit.</p>
+    <p id="content">With <span>Apple</span> Trade In, you can get credit towards a new <span>iPhone</span> when you trade in your eligible smartphone.4 It’s good for you and the planet.</p>
+<div class="learn">
+    <a id="learn" href="#">Learn more ></a></div>
+    <div class="image">
+    <img class="phone" src="assests/images/mobile1.png"></div>
+    <div class="phone-content">
+        <p id="content1">Why Apple is the best place to buy iPhone.</p>
+        <p id="content2">You can choose a payment option that works for you, pay less with a trade‑in, connect your new <span>iPhone</span> to your carrier and get set up quickly.
+            You can also chat with a Specialist anytime.</p>
+    </div>
+    <div class="image2">
+        <img class="phone2" src="assests/images/mobile2.png"></div>
+        <p class="magsafe">MagSafe</p>
+        <p class="mag-content">Snap on a magnetic case, wallet or both. And get faster <span>wireless charging.</span></p>
+        <div class="learn">
+            <a id="learn" href="#">Learn more ></a></div>
+
+
+            <div class="mag">
+                <img class="left" src="assests/images/leftmag.png">
+                <img class="center" src="assests/images/centermag.png">
+                <img class="right" src="assests/images/rightmag.png">
+            </div>
+
+            <p class="airpod">Magic runs in the family.</p>
+        <p class="air-content">Explore all <span>AirPods</span> models and find the best ones for you.</p>
+        <div class="learn">
+            <a id="learn" href="#">Learn more ></a></div>
+
+
+            
+            <div class="air">
+                <img class="left1" src="assests/images/airpod.png">
+                <img class="center1" src="assests/images/airpod.png">
+                <img class="right1" src="assests/images/airpod.png">
+            </div>
+
+
+
+
+
+
+
+
+            <p class="airtag">AirTag</p>
+            <p class="tag-content">Attach one to your keys. Put another in your backpack. If they’re misplaced, simply use the <span>Find My app</span>.</p>
+            <div class="learn">
+                <a id="learn" href="#">Learn more ></a></div>
+    
+    
+                
+                <div class="tag">
+                  <img class="one" src="assests/images/airtag1.png">
+                  <img class="two" src="assests/images/airtag2.png">
+                  <img class="three" src="assests/images/airtag3.png">
+                  <img class="four" src="assests/images/airtag4.png">
+                  <!-- <img class="ball" src="assests/images/airball.png"> -->
+                  
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <p class="arcade">Arcade</p>
+                <p class="cade-content">Get 3 months of <span>Apple Arcade</span> free when you buy an iPhone.</p>
+                <div class="learn">
+                    <a id="learn" href="#">Learn more ></a></div>
+        
+        
+                    
+                    <div class="cade">
+                     
+                     <img class="leftone" src="assests/images/arcade1.png">
+                     <img class="centerone" src="assests/images/arcade2.png">
+                     <img class="rightone" src="assests/images/arcade3.png">
+                     <img class="lefttwo" src="assests/images/arcade4.png">
+                     <img class="centertwo" src="assests/images/arcade5.png">
+                     <img class="righttwo" src="assests/images/arcade6.png">
+                      
+                    </div>
+
+
+
+                    <footer>
+<p class="copyrights">Copyright © 2022 Apple Inc. All rights reserved</p>
+<p class="bottom">Privacy Policy | Terms of Use | Sales Policy | Legal | Site Map</p>
+                    </footer>
+    <script>
+         gsap.registerPlugin(ScrollTrigger);
+        // gsap.from(".phone",{
+        //     skewX:30,
+        //     duration:1,
+        //     opacity:0.2,
+          
+        // })
+        gsap.to(".phone",{
+            skewX:0,
+            duration:6,
+            opacity:1,
+            scale:1.3,
+            scrollTrigger: {
+                trigger:".phone",
+                start:"top 50%",
+                end:"top 10%",  
+                 scrub:true,
+    
+            }
+          
+        })
+        gsap.to(".phone-content",{
+            opacity:1,
+            duration:6,
+            scrollTrigger:{
+                trigger:".phone-content",
+                start:"top 80%",
+                end:"bottom 50%",
+                scrub:true,
+            }
+        })
+        gsap.to(".phone2",{
+    rotateX:0,
+            duration:6,
+            scrollTrigger:{
+                trigger:".phone2",
+                start:"top 95%",
+              end:"top 30%",
+                scrub:true,
+            }
+        })
+        gsap.to(".left",{
+    translateX:0,
+            duration:6,
+            scrollTrigger:{
+                trigger:".left",
+                start:"top 65%",
+              end:"top 40%",
+                scrub:true,
+
+            }
+        })
+        gsap.to(".right",{
+    translateX:0,
+            duration:6,
+            scrollTrigger:{
+                trigger:".left",
+                start:"top 65%",
+              end:"top 40%",
+                scrub:true,
+
+            }
+        })
+        gsap.to(".right",{
+    translateX:0,
+            duration:6,
+            scrollTrigger:{
+                trigger:".left",
+                start:"top 65%",
+              end:"top 30%",
+                scrub:true,
+
+            }
+        })
+        gsap.to(".right",{
+    translateX:0,
+            duration:6,
+            scrollTrigger:{
+                trigger:".right",
+                start:"top 65%",
+              end:"top 30%",
+                scrub:true,
+
+            }
+        })
+        gsap.to(".center",{
+    opacity:1,
+            duration:6,
+            scrollTrigger:{
+                trigger:".center",
+                start:"top 65%",
+              end:"top 30%",
+                scrub:true,
+
+            }
+        })
+        gsap.to(".left1",{
+    translateX:30,
+    rotateY:60,
+            duration:6,
+            scrollTrigger:{
+                trigger:".left1",
+                start:"top 75%",
+              end:"top 30%",
+                scrub:true,
+
+            }
+        })
+        gsap.to(".right1",{
+    translateX:-30,
+    rotateY:-60,
+            duration:6,
+            scrollTrigger:{
+                trigger:".right1",
+                start:"top 75%",
+              end:"top 30%",
+                scrub:true,
+
+            }
+        })
+        gsap.to(".one",{
+    left:"-12vw",
+    rotate:0,
+            duration:6,
+            scrollTrigger:{
+                trigger:".one",
+                start:"top 65%",
+              end:"top 40%",
+                scrub:true,
+
+            }
+        })
+        gsap.to(".three",{
+    left:"-12vw",
+    rotate:0,
+            duration:6,
+            scrollTrigger:{
+                trigger:".three",
+                start:"top 65%",
+              end:"top 40%",
+                scrub:true,
+
+            }
+        })
+        gsap.to(".two",{
+    right:"-12vw",
+    rotate:"180deg",
+            duration:6,
+            scrollTrigger:{
+                trigger:".two",
+                start:"top 65%",
+              end:"top 40%",
+                scrub:true,
+
+            }
+        })
+        gsap.to(".four",{
+    right:"-12vw",
+    rotate:"180deg",
+            duration:6,
+            scrollTrigger:{
+                trigger:".four",
+                start:"top 65%",
+              end:"top 40%",
+                scrub:true,
+
+            }
+        })
+        
+        gsap.to(".leftone",{
+    translateX:0,
+            duration:6,
+            scrollTrigger:{
+                trigger:".leftone",
+                start:"top 75%",
+              end:"top 65%",
+                scrub:true,
+
+            }
+        })
+        gsap.to(".lefttwo",{
+    translateX:0,
+            duration:6,
+            scrollTrigger:{
+                trigger:".lefttwo",
+                start:"top 80%",
+              end:"top 70%",
+                scrub:true,
+
+            }
+        })
+        gsap.to(".rightone",{
+    translateX:0,
+            duration:6,
+            scrollTrigger:{
+                trigger:".rightone",
+                start:"top 75%",
+              end:"top 65%",
+                scrub:true,
+
+            }
+        })
+        gsap.to(".righttwo",{
+    translateX:0,
+            duration:6,
+            scrollTrigger:{
+                trigger:".righttwo",
+                start:"top 80%",
+              end:"top 70%",
+                scrub:true,
+          
+            }
+        })
+        gsap.to(".centerone",{
+   opacity:1,
+            duration:6,
+            scrollTrigger:{
+                trigger:".centerone",
+                start:"top 70%",
+              end:"top 60%",
+                scrub:true,
+               
+            }
+        })
+        gsap.to(".centertwo",{
+   opacity:1,
+            duration:6,
+            scrollTrigger:{
+                trigger:".centertwo",
+                start:"top 70%",
+              end:"top 60%",
+                scrub:true,
+               
+            }
+        })
+        
+
+
+
+
+
+
+
+
+
+
+
+
+       
+       
+    </script>
+</body>
+</html>
